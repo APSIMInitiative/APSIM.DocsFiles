@@ -8,8 +8,8 @@ In this step-by-step guide we will show how to create a new model for APSIM. The
 
 The sections in this guide increase in complexity. To follow along with this tutorial you can build the model using the manager component in the user interface (manager scripts are just models). Alternatively, you can install the necessary tools to compile and build APSIM using these steps:
 
-* get all source code from GitHub via [a Git client](/contribute/sourcetree) or via [the command line](/contribute/cli)
-* install [compilers](/contribute/compile)
+* get all source code from GitHub via [a Git client](/development/software/git-sourcetree) or via [the command line](/development/software/git-cli)
+* install [compilers](/development/software/compileincommandline)
 
 # 1. Create a basic model
 
