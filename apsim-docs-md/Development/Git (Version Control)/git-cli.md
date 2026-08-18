@@ -25,13 +25,15 @@ There are two repositories:
 
 First, you will need to install the git client (if you don't already have it installed):
 
-```sudo apt install git```
+```bash
+sudo apt install git
+```
 
 ## Clone the two Repositories
 
 To bring the source code from GitHub to your computer, you will need to clone the repository.
 
-```
+```bash
 git clone https://github.com/APSIMInitiative/ApsimX
 ```
 
@@ -39,7 +41,7 @@ git clone https://github.com/APSIMInitiative/ApsimX
 
 If you forked either of the repositories, you will need to add your remote repository:
 
-```
+```bash
 cd ApsimX
 git remote add $remote_name https://github.com/$username/ApsimX
 ```
@@ -57,35 +59,54 @@ Commit messages are important, especially since git tracks your changes and then
 
 Commits are local to your computer only until you do a push to a remote repository.
 
-To list new/modified files use `git status`
+To list new/modified files use:
 
-To view the changes from the previous commit, use `git diff`
+```bash
+git status
+```
 
-To undo changes which you don't want to keep, use `git checkout ModifiedFile.txt`
+To view the changes from the previous commit, use:
+
+```bash
+git diff
+```
+
+To undo changes which you don't want to keep, use:
+
+```bash
+git checkout ModifiedFile.txt
+```
 
 Before you commit your changes you must first add any new or modified files to the index.
 
-```
+```bash
 git add ModifiedFile.txt
 ```
 
 To remove a file from the index, use the reset command:
 
-```
+```bash
 git reset ModifiedFile.txt
 ```
 
 To perform the commit:
 
-```
+```bash
 git commit -m "Commit message"
 ```
 
-For additional options/help, use `git help commit` or `man git`
+For additional options/help, use:
+```bash
+git help commit
+``` 
+or 
+```bash
+man git
+```
 
 
 
-**NOTE:** Before you bring your folder up to date, you need to [commit or discard all files that you have added or modified](/contribute/cli/commit). If you don't do this you may get errors during the pull process outlined below.
+**NOTE:** Before you bring your folder up to date, you need to commit or discard all files that you have added or modified. If you don't do this you may get errors during the pull process outlined below.
 
 ## Pull
 
@@ -102,7 +123,7 @@ Then simply run ````git pull <remote> <branch>````, where \<remote\> and \<branc
 
 ## Push changes to a remote
 
-Once you're ready to share your commits with the wider APSIM community and have them merged into the master repository, you will need to push your commits to your forked remote repository (e.g. hol353). Doing a push won't impact on other developers and won't cause Jenkins to run the test suite. Pushing will allow other developers to pull from your branch on your repository so it is a good way to share what you are doing with others.
+Once you're ready to share your commits with the wider APSIM community and have them merged into the master repository, you will need to push your commits to your forked remote repository (e.g. hol353). Doing a push won't impact on other developers. Pushing will allow other developers to pull from your branch on your repository so it is a good way to share what you are doing with others.
 
 To list your remote repositories, use ```git remote```. To view remote URLs as well, use ```git remote -v```.
 
@@ -128,22 +149,25 @@ You can also continue to push to your branch in light of discussion and feedback
 
 ### 2. Jenkins build and run system
 
-Jenkins will automatically run all pull requests and flag pass/fail with GitHub. If you have finished a piece of work then you need to state somewhere in the first comment box of the pull request:
+GitHub will automatically run all pull requests and flag pass/fail with GitHub. If you have finished a piece of work then you need to state somewhere in the first comment box of the pull request:
 
-Resolves #45
-
+```text
+resolves #45
+```
 or
 
-Working on #45
+```text
+working on #45
+```
 
 This will alert the administrators of the APSIM repository that the pull request fixes issue number 45 (or you are working on it). All merges to master must have an issue describing the piece of work.
 
-### 3. The APSIM Performance Testing site
+### 3. The APSIM Performance Testing suite
 
 The APSIM Performance Testing suite will also test your pull request, calculating statistics on all predicted / observed data found and check them against the 'accepted' statistics. This will also be reported back to your pull request.
 
-## Merging with the MasterRepo
+## Merging with the Master Repo
 
-If the pull request has been reviewed by a developer, the Jenkins build system passes and the APSIM Performance Testing system also passes, the administrators will then merge the pull request with the master branch of the main repository and close the issue (if you specified 'resolves'). Once the issue is closed it should not be reopened.
+If the pull request has been reviewed by a developer, the build system passes and the APSIM Performance Testing system also passes, the administrators will then merge the pull request with the master branch of the main repository and close the issue (if you specified 'resolves').
 
 After a Pull request that resolves an issue is authorised to be merged, the the automated upgrade building process will commence to create an upgrade available in the upgrade manager of the user interface. The upgrade make take a while to generate and has the following naming: [Date of merge yyyy.mm.dd].[resolved issue number] "Issue description" (e.g. 2021.08.12.6699 Predicted-observed graphs not displaying).
