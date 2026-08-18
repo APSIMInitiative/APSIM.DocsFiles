@@ -38,3 +38,9 @@ the `--apply` switch can be used in conjunction with the `--batch` switch.
 
 
 * To run this we would run something like: `"C:\Program Files\APSIM<your version number>\bin\Models.exe" --apply config-file-name.txt --batch batch-file-name.csv`
+
+# FAQ
+
+> Is there a way to tell it to run multiple rows at a time?
+
+No, not at this time. The apply switch works in a sequential fashion.

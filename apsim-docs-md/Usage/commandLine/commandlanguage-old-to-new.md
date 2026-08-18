@@ -12,9 +12,23 @@ Examples that show how to convert old syntax to the new syntax.
 
 - __add__ - add a new or existing model to another model.
 
-    ```add [Zone] Report``` ->  ```add new Report to [Zone]```
-    ```add [Zone] Report MyReport``` -> ```add new Report to [Zone] name MyReport```
-    ```add [Zone] soils.apsimx;[Soil1] Soil``` -> ```add [Soil1] from soils.apsimx to [Zone] name Soil```
+    ``` text
+    add [Zone] Report ->  add new Report to [Zone]
+    ```
+
+    ```text
+    add [Zone] Report MyReport -> add new Report to [Zone] name MyReport
+    ```
+
+    ```text
+    add [Zone] soils.apsimx;[Soil1] Soil -> add [Soil1] from soils.apsimx to [Zone] name Soil
+    ```
+
 - __duplicate__ - duplicate a model.
-    - ```duplicate [Zone].Report NewReport``` -> ```duplicate [Zone].Report name NewReport```
-- __comment lines__ - only ```#``` is supported as a comment character.
+
+    ```text
+    duplicate [Zone].Report NewReport -> duplicate [Zone].Report name NewReport
+    ```
+- __comment lines__ 
+    
+    only ```#``` is supported as a comment character.

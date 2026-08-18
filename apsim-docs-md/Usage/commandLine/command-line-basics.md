@@ -10,10 +10,10 @@ To run APSIM from the command line you need to locate the Models.exe binary file
 C:\Program Files\APSIM<Version-number>\bin\Models.exe
 ```
 
-on LINUX it is located in
+on Linux it is located in
 
 ```
-/usr/local/bin/Models.exe
+/usr/local/bin/Models
 ```
 
 ## Command line usage.
