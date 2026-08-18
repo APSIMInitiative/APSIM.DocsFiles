@@ -47,7 +47,7 @@ To determine what implementation and parameterisation are used for a particular 
 * From the user interface, open a wheat example.
 * By default the wheat model won't show it's structure or parameterisation. To show more detail, right click on the wheat model and select 'Show model structure'.
 
-![Wheat model structure](/images/Wheat.ModelStructure.png)
+![Wheat model structure](https://github.com/APSIMInitiative/ApsimX/blob/master/ApsimNG/Resources/DocsImages/Wheat.ModelStructure.png?raw=true)
 
 The image above shows *Photosynthesis* selected (under wheat) and the tooltip showing *RUEModel*. This tells us the c# class being used is *RUEModel*. The image also shows us that there are 7 child models of *RUEModel*, *RUE*, *FT*, *FN*, *FW*, *FVPD*, *FCO2* and *RandInt*.
 
@@ -123,11 +123,11 @@ The source code of the *RUEModel* looks like this:
 	- It returns radiationInterception * RueAct.
 * The level of indirection caused by having child functions for each of several multipliers offers great flexibility to the model developer in defining photosynthesis. It lets the model developer, from the user interface, change the individual multipliers from constants to a more complex linear interpolation or any other function type. For example: *FT* is a *WeightedTemperatureFunction* and *FN* is a *LinearInterpolationFunction*:
 
-![Wheat FN](/images/Wheat.Photosynthesis.FN.png)
+![Wheat FN](https://github.com/APSIMInitiative/ApsimX/blob/master/ApsimNG/Resources/DocsImages/Wheat.Photosynthesis.FN.png?raw=true)
 
 The above image shows the visualisation of the *FN* linear interpolation. To determine what the X variable is you need to click on *XValue* in the simulation tree:
 
-![Wheat FN](/images/Wheat.Photosynthesis.FN2.png)
+![Wheat FN](https://github.com/APSIMInitiative/ApsimX/blob/master/ApsimNG/Resources/DocsImages/Wheat.Photosynthesis.FN2.png?raw=true)
 
 The image above shows the model developer has specified *[Leaf].Fn* which means the FN linear interpolation will call the *Fn*property in *Leaf* to get the x value for the linear interpolation. The *Fn* property in leaf looks like this:
 
