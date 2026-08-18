@@ -10,7 +10,7 @@ APSIM can be compiled using Microsoft Visual Studio 2019 or later. A single solu
 
 Building APSIM requires that version 8.0 of the .NET SDK is installed. This can be installed at the same time as Visual Studio. If Visual Studio is already installed, the installation can be modified by navigating to 'Tools\Get Tools and Features...' in the menu bar and modifying the existing installation by adding either the ".NET desktop development" or "Universal Windows Platform development" workload.
 
-![Install the .NET Core SDK](/images/vs-modify-workload.png)
+![Install the .NET Core SDK](https://github.com/APSIMInitiative/ApsimX/blob/master/ApsimNG/Resources/DocsImages/vs-modify-workload.png?raw=true)
 
 1. Open ApsimX.sln in visual studio
 2. Build solution (default ctrl + shift + b)
