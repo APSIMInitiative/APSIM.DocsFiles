@@ -25,10 +25,10 @@ Remember to use `Save As` not `Save` or you will overwrite the old file.
 
 4. Make a copy of `Clay Fallow` by dragging it to the simulations node in the tree and rename this new simulation to `Clay Residue`.
 	- Your node tree should look like this:
-	![Node tree](/images/moduleTwoImages/step1.png)
+	![Node tree](https://raw.githubusercontent.com/APSIMInitiative/ApsimX/master/ApsimNG/Resources/DocsImages/moduleTwoImages/step1.png)
 
 5. Expand the new simulation then expand the paddock node. Click the SurfaceOrganicMatter module and change the initial surface residue to 3000 kg/ha.
-![residue variable](/images/moduleTwoImages/step2.png)
+![residue variable](https://raw.githubusercontent.com/APSIMInitiative/ApsimX/master/ApsimNG/Resources/DocsImages/moduleTwoImages/step2.png)
 
 6. Run both of the simulations, either by clicking on the `simulations` node at the top and then clicking Run, or selecting them individually and running them.
 
@@ -49,7 +49,7 @@ Remember to use `Save As` not `Save` or you will overwrite the old file.
 			- change `colour` to yellow
 			- rename this `Series` node as `SOM`.
 		- Your node tree should look like this:
-		![SOM node](/images/moduleTwoImages/step3.png)
+		![SOM node](https://raw.githubusercontent.com/APSIMInitiative/ApsimX/master/ApsimNG/Resources/DocsImages/moduleTwoImages/step3.png)
 8. Create another series for rain under the `Graph` node. 
 	- To do this:
 		- right-click `Organic Matter Cover` node
@@ -66,7 +66,7 @@ Remember to use `Save As` not `Save` or you will overwrite the old file.
 			- change `Marker type` to `None`
 			- change `Colour` to blue.
 		- Your node tree should look like this:
-		![Rain node](/images/moduleTwoImages/step4.png)
+		![Rain node](https://raw.githubusercontent.com/APSIMInitiative/ApsimX/master/ApsimNG/Resources/DocsImages/moduleTwoImages/step4.png)
 
 ## The effect of cover decline on runoff and evaporation
 
@@ -85,7 +85,7 @@ We will compare the effect that ground cover has on runoff.
 		- double-click `Series`
 		- rename series to `Cumulative Runoff`
 		- Set your series variables to below:
-		![Runoff graph image](/images/moduleTwoImages/step5.png)
+		![Runoff graph image](https://raw.githubusercontent.com/APSIMInitiative/ApsimX/master/ApsimNG/Resources/DocsImages/moduleTwoImages/step5.png)
 		- NOTE: If you only get one graph it means that one simulation has not been run yet. 
 
 4. Let's add another Series for `Rain`
@@ -95,7 +95,7 @@ We will compare the effect that ground cover has on runoff.
 		- double-click `Series`
 		- rename this series to `Rain`
 		- set the series variables to below:
-		![rain series variables](/images/moduleTwoImages/step6.png)
+		![rain series variables](https://raw.githubusercontent.com/APSIMInitiative/ApsimX/master/ApsimNG/Resources/DocsImages/moduleTwoImages/step6.png)
 
 ## The effect of residue type on speed of decomposition
 
@@ -107,7 +107,7 @@ To demonstrate this we will reproduce the previous simulation but apply legume r
 3. Change the SurfaceOrganicMatter residue parameters to 3000 kg/ha of chickpea residue. 
 	- Also change the initial residue pool to 'chickpea'.
 4. Change the C:N ratio to 25.
-![Surface organic matter chickpea](/images/moduleTwoImages/step7.png)
+![Surface organic matter chickpea](https://raw.githubusercontent.com/APSIMInitiative/ApsimX/master/ApsimNG/Resources/DocsImages/moduleTwoImages/step7.png)
 5. Run the simulation.
 6. Create a graph with all three residue simulations with residue as a function of time. Call the graph `Cover`.
 	- To do this:
@@ -119,11 +119,11 @@ To demonstrate this we will reproduce the previous simulation but apply legume r
 		- click `Add model...`
 		- double-click `Series`
 7. Change the variables to match the image below:
-![Series variables for cover graph](/images/moduleTwoImages/step8.png)
+![Series variables for cover graph](https://raw.githubusercontent.com/APSIMInitiative/ApsimX/master/ApsimNG/Resources/DocsImages/moduleTwoImages/step8.png)
 8. If you'd like the lengend to appear on the right of the graph like the image:
 	- Click one of the legend items
 	- a menu will appear at the bottom of the graph and you can change the drop down menu's value to top right or any other position to your liking.
-	![Change legend location](/images/moduleTwoImages/step9.png)
+	![Change legend location](https://raw.githubusercontent.com/APSIMInitiative/ApsimX/master/ApsimNG/Resources/DocsImages/moduleTwoImages/step9.png)
 
 *Congratulations on completing module two!*
 

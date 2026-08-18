@@ -33,7 +33,7 @@ initial surface residue: `550 kg/ha`, Carbon:Nitrogen ratio of `76`, leave the F
 8. Right-click `Field` and add a `Chickpea` plant node. All plants are found under the `PMF` folder.
 9. Delete `Wheat`.
 10. In `Sow using a variable` change the values to match the following:
-![Sow using a variable's values](/images/moduleFiveImages/img1.png)
+![Sow using a variable's values](https://raw.githubusercontent.com/APSIMInitiative/ApsimX/master/ApsimNG/Resources/DocsImages/moduleFiveImages/img1.png)
 11. Run the simulation.
 12. You should get an error that at it's end says: `.Chickpea.Field.Report can not find the component: [Wheat]`. This means we need to update the report variables and report events in `Report`. Let's change any that have `[Wheat]` to `[Chickpea]`. 
     - Remove `[Chickpea].Grain.Protein`.
@@ -44,9 +44,9 @@ initial surface residue: `550 kg/ha`, Carbon:Nitrogen ratio of `76`, leave the F
 	- This is caused by using a soil that is missing a `SoilCrop` node (located under `Physical`) with the same name as the plant node you are using. For now, create a copy of `WheatSoil` under `Physical` and rename it `ChickpeaSoil` to fix this exception.
 15. Before we run again, let's update our `Harvest` management node to look for the correct crop, now that `Wheat` has been removed and `Chickpea` has ben added.
 16. Your simulation should now run successfully and you should have data in your `DataStore` node.
-![Datastore node](/images/moduleFiveImages/img2.png)
+![Datastore node](https://raw.githubusercontent.com/APSIMInitiative/ApsimX/master/ApsimNG/Resources/DocsImages/moduleFiveImages/img2.png)
 17. Add a management script called `Reset on date` to the `Chickpea` simulation (found in `Management Toolbox` under `Other`)
-![reset on date location](/images/moduleFiveImages/img3.png)
+![reset on date location](https://raw.githubusercontent.com/APSIMInitiative/ApsimX/master/ApsimNG/Resources/DocsImages/moduleFiveImages/img3.png)
 18. Leave all parameters as yes and change the `date to reset on` to `1-may`. 
     - <strong style="color: red;">note:</strong> make sure this management script sits above all other management scripts in the tree as they are ran in the order they are arranged from top to bottom.
 20. Remove the `Fertilise at sowing` manager node.
@@ -57,7 +57,7 @@ initial surface residue: `550 kg/ha`, Carbon:Nitrogen ratio of `76`, leave the F
 25. Create a graph under `Simulations`. Rename it `Total chickpea yield time series` with a series that plots `[Clock].Today` and `Yield`.
 26. Now you have a graph showing yield when comparing differing plant density over 40 years. 
     - If you've copied the graph settings from the image below and you can't see both simulations data displayed. Make sure `Chickpea 15 plants` sits above `Chickpea 10 plants` in the tree.
-![Final total yield graph](/images/moduleFiveImages/img4.png)
+![Final total yield graph](https://raw.githubusercontent.com/APSIMInitiative/ApsimX/master/ApsimNG/Resources/DocsImages/moduleFiveImages/img4.png)
 
 
 <i><span style="color:red;">Note:</span> If you found any incorrect/outdated information in this tutorial. Please let us know on GitHub by <a href="https://www.github.com/APSIMInitiative/ApsimX/issues/new/choose/">submitting an issue.</a></i>
