@@ -28,22 +28,20 @@ Reasons need to be given by the model author should any of the guidelines not be
 
 **Software Guidelines**
 
-* [Coding style](/docs/development/software/codingstyle)
+* [Coding style](/development/software/codingstyle)
 
-* [Model design](/docs/development/software/modeldesign)
+* [Model design](s/development/software/modeldesign)
 
-* [User interface design](/docs/development/software/userinterfacedesign)
+* [User interface design](/development/software/userinterfacedesign)
 
-* [PMF model design](/docs/development/software/pmfdesign)
+* [PMF model design](/development/software/pmfdesign)
 
-* [Software interfaces](/docs/development/software/interfaces)
+* [Software interfaces](/development/software/interfaces)
 
-* [Unit tests](/docs/development/software/unittests)
+* [Unit tests](/development/software/unittests)
 
 **Science guidelines**
 
-* [Testing](/docs/development/science/testing)
+* [Testing](/usage/tests)
 
-* [Documentation](/docs/development/science/documentation)
-
-* [Examples](/docs/development/science/examples)
+* [Documentation](/usage/documentationtutorial)
