@@ -3,7 +3,7 @@ title: "SourceTree"
 weight: 30
 ---
 
-SourceTree is only available on Windows and OSX. If you are using Linux, version control will need to be managed [via the command line](/contribute/cli/)
+SourceTree is only available on Windows and OSX. If you are using Linux, version control will need to be managed via the command line or another git client.
 
 ## Create GitHub account
 
@@ -42,9 +42,9 @@ You now need to create a link to your ApsimX fork that you created earlier.
 
 We suggest you name the remote repository the same as your GitHub user name, hence the need to enter it twice. The reason for linking to two repositories will become evident later. You ALWAYS **pull** from the ApsimX repository and **push** to your forked repository.
 
-At this point, you have all source code. If you wish to compile the code yourself, see [here](/contribute/compile/). If you don't wish to compile the code, you can run any of the examples/prototypes/test sets with the released version of apsim, but it will need to be up-to-date.
+At this point, you have all source code. If you wish to compile the code yourself, see [here](/development/software/compileincommandline/). If you don't wish to compile the code, you can run any of the examples/prototypes/test sets with the released version of apsim, but it will need to be up-to-date.
 
-After you have made some changes to the code or test sets, you will need to [commit your changes](/contribute/sourcetree/commit/).
+After you have made some changes to the code or test sets, you will need to commit your changes.
 
 
 ## Initial setup
@@ -54,7 +54,7 @@ After you have made some changes to the code or test sets, you will need to [com
 * Click 'Commit'
 * Choose 'No staging' in the drop down beside the 'Modified files...' drop down
 
-![SourceTreeRemotes](/images/Development.SourceTreeNoStaging.png)
+![SourceTreeRemotes](https://github.com/APSIMInitiative/ApsimX/blob/master/ApsimNG/Resources/DocsImages/Development.SourceTreeNoStaging.png?raw=true)
 
 ## Commit
 
@@ -66,7 +66,7 @@ Commit messages are important, especially since Git tracks your changes and then
 
 Commits are local to your computer only until you do a push to a remote repository.
 
-![SourceTreeRemotes](/images/Development.SourceTreeCommit.png)
+![SourceTreeRemotes](https://github.com/APSIMInitiative/ApsimX/blob/master/ApsimNG/Resources/DocsImages/Development.SourceTreeCommit.png?raw=true)
 
 In the top left corner, SourceTree shows (by default) the files that you have modified but haven't commited yet. If you have created new files that have never been commited they won't be shown yet. To see these files, change the drop down box from 'Modified files" to "Untracked". Note that the .db files produced by APSIM simulations are ignored by git and should not be committed.
 
@@ -82,13 +82,13 @@ Finally, at the bottom type in a commit message, make sure 'Push changes immedia
 
 
 
-**NOTE:** Before you bring your folder up to date, you need to [commit or discard all files that you have added or modified](/development/commit). If you don't do this you may get errors during the pull process outlined below.
+**NOTE:** Before you bring your folder up to date, you need to commit or discard all files that you have added or modified/development/commit. If you don't do this you may get errors during the pull process outlined below.
 
 ## Pull
 
 To bring the current branch up to date you get the latest commits from the *master* branch in the *MasterRepo* repository. Click the pull button:
 
-![SourceTreeRemotes](/images/Development.SourceTreePull.png)
+![SourceTreeRemotes](https://github.com/APSIMInitiative/ApsimX/blob/master/ApsimNG/Resources/DocsImages/Development.SourceTreePull.png?raw=true)
 
 Ensure the remote is *MasterRepo* and the branch is *master*. Leave all other checkboxes alone. This will bring down the latest commits from the MasterRepo/master branch into your 'current' branch (the one in bold in SourceTree).
 
@@ -99,11 +99,11 @@ Ensure the remote is *MasterRepo* and the branch is *master*. Leave all other ch
 
 Once you're ready to share your commits with the wider APSIM community and have them merged into the master repository, you will need to push your commits to your forked remote repository (e.g. hol353). Doing a push won't impact on other developers and won't cause Jenkins to run the test suite. Pushing will allow other developers to pull from your branch on your repository so it is a good way to share what you are doing with others.
 
-![SourceTreeRemotes](/images/Development.SourceTreeRemotes.png)
+![SourceTreeRemotes](https://github.com/APSIMInitiative/ApsimX/blob/master/ApsimNG/Resources/DocsImages/Development.SourceTreeRemotes.png?raw=true)
 
 In this image there are two remote repositories, hol353 (a developers remote) and MasterRepo (the main APSIM repository). **You should never push to the MasterRepo remote**. Instead, you push to your remote repository - *hol353* in this example. Click the push button.
 
-![SourceTreeRemotes](/images/Development.SourceTreePush.png)
+![SourceTreeRemotes](https://github.com/APSIMInitiative/ApsimX/blob/master/ApsimNG/Resources/DocsImages/Development.SourceTreePush.png?raw=true)
 
 Always make sure the remote (highlighted in the above image) is your remote and not *MasterRepo*. You also need to tick the branch you want to push to your remote repository, in this case master.
 
