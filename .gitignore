@@ -1,0 +1,28 @@
+# OS files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Editor/IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*.tmp
+*.bak
+
+# Local/log artifacts
+*.log
+*.orig
+*.rej
+
+# Deployment/archive artifacts
+*.tar
+*.tar.gz
+*.tgz
+*.zip
+
+# Common generated directories
+build/
+dist/
+out/
