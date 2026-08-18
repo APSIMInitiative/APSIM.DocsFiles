@@ -92,7 +92,7 @@ Another useful event is called OnSimulationCompleted which will be invoked immed
 
 ## A hierarchy of models
 
-In all APSIM simulations, models are run under a parent model and ultimately a parent ‘Zone’ (a core model that looks after a collection of models (used to be called a Paddock). This zone model is itself contained within a  ‘Simulation’, which in turn is parented by a 'Simulations' model. Interfaces for these are provided in the reference documentation. If a model needs to communicate with its Zone or Simulation, it may do so via the normal link mechanism.
+In all APSIM simulations, models are run under a parent model and ultimately a parent ‘Zone’ (a core model that looks after a collection of models (used to be called a Paddock)). This zone model is itself contained within a  ‘Simulation’, which in turn is parented by a 'Simulations' model. Interfaces for these are provided in the reference documentation. If a model needs to communicate with its Zone or Simulation, it may do so via the normal link mechanism.
 
 ## Methods provided by the Model base class.
 
