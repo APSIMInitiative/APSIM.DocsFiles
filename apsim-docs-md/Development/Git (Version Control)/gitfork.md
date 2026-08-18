@@ -12,11 +12,13 @@ Download [Git Fork](https://git-fork.com/)
 
 The first thing to do is to clone the <a href="https://github.com/APSIMInitiative/ApsimX" target="_blank">APSIMInitiative/ApsimX</a> repository. This can be done by using a command line terminal to navigate to the directory you want to download the source code to and run the command:
 
-	git clone https://github.com/APSIMInitiative/ApsimX.git
+```bash
+git clone https://github.com/APSIMInitiative/ApsimX.git
+```
 
 Alternatively, you can use Visual Studio to clone the repository from the start screen
 
-![Clone repo in visual studio](/images/clone_repo_visual_studio.png)
+![Clone repo in visual studio](https://github.com/APSIMInitiative/ApsimX/blob/master/ApsimNG/Resources/DocsImages/clone_repo_visual_studio.png?raw=true)
 
 It is best practice to fork(copy) the APSIM repository and push changes to this before submitting changes to the master version of APSIM.
 
@@ -28,7 +30,7 @@ Instructions on how to use Git to make and submit changes can be found <a href="
 
 A good practice is to always pull changes from the master APSIM repository before starting any new work. This is important to avoid any problems when it comes time to submit your changes.
 Doing this will ensure you have the most up to date version of the APSIM source files.
-![Pulling changes from master image](/images/pull_master_changes.png)
+![Pulling changes from master image](https://github.com/APSIMInitiative/ApsimX/blob/master/ApsimNG/Resources/DocsImages/pull_master_changes.png?raw=true)
 
 
 ## Commiting changes to your local repository
@@ -47,47 +49,68 @@ To view the changes you've made that are ready to be committed:
 
 - Select Local Changes.
 - Next highlight any files in the unstaged list that you would like to commit and click 'stage'.
-![committing changes](/images/committing_changes.png)
+![committing changes](https://github.com/APSIMInitiative/ApsimX/blob/master/ApsimNG/Resources/DocsImages/committing_changes.png?raw=true)
 - The files will then move to the 'Staged' section.
-![Staged changes](/images/staged_changes.png)
+![Staged changes](https://github.com/APSIMInitiative/ApsimX/blob/master/ApsimNG/Resources/DocsImages/staged_changes.png?raw=true)
 - Next include a 'Commit Subject' and detailed 'Description' describing the changes you've made. This will benefit anyone reviewing your changes.
 - To commit the changes click 'confirm'.
-![committing changes](/images/confirm_commit.png)
+![committing changes](https://github.com/APSIMInitiative/ApsimX/blob/master/ApsimNG/Resources/DocsImages/confirm_commit.png?raw=true)
 
 
 ## Committing using the command line interface
 
-To list new/modified files use `git status`
+To list new/modified files use:
 
-To view the changes from the previous commit, use `git diff`
+```bash
+git status
+```
 
-To undo changes which you don't want to keep, use `git checkout ModifiedFile.txt`
+To view the changes from the previous commit, use:
+
+```bash
+git diff
+```
+
+To undo changes which you don't want to keep, use: 
+
+```bash
+git checkout ModifiedFile.txt
+```
 
 Before you commit your changes you must first add any new or modified files to the index.
 
-```
+```bash
 git add ModifiedFile.txt
 ```
 
 To remove a file from the index, use the reset command:
 
-```
+```bash
 git reset ModifiedFile.txt
 ```
 
 To perform the commit:
 
-```
+```bash
 git commit -m "Commit message"
 ```
 
-For additional options/help, use `git help commit` or `man git`
+For additional options/help, use 
+
+```bash
+git help commit
+``` 
+or 
+
+```bash
+man git
+```
 
 
 
 ## Working on Apsim
 
-To see how to begin working on APSIM for your unique operating system see <a href="/contribute/compile/" target="_blank">Compile Section</a>.
+To see how to begin working on APSIM for your unique operating system see <a href="/development/software/compileincommandline/" target="_blank">Compile Section</a>.
 
 An option for working on APSIM is to use Visual Studio 2022. You can be download it <a href="https://visualstudio.microsoft.com/vs/" target="_blank">here</a>.
 
@@ -100,39 +123,43 @@ You can’t push directly to the main ApsimX repository. Instead, you need to pu
 
 - Open a web browser, go to the <a href="https://github.com/APSIMInitiative/ApsimX" target="_blank">APSIM github page</a> and click on the fork link in the top right hand corner of the repository on GitHub.
 - Clicking this will create a copy of the APSIM repository into your GitHub account.
-	![fork repo](/images/fork_repo.png)
+	![fork repo](https://github.com/APSIMInitiative/ApsimX/blob/master/ApsimNG/Resources/DocsImages/fork_repo.png?raw=true)
 - Once you’ve done this you need to add your GitHub ‘remote’ to your git client. We recommend Fork. You can download it <a href="https://git-fork.com/" target="_blank"> here</a>
 
 - In the screenshot below, right click on ‘Remotes’ in the tree, click ‘Add Remote’ and fill in a name for your remote (usually your name or your github name) and the URL for the ApsimX repo. Mine looks like:
 
-	![add remote](/images/add_remote.png)
+	![add remote](https://github.com/APSIMInitiative/ApsimX/blob/master/ApsimNG/Resources/DocsImages/add_remote.png?raw=true)
 
 	- Alternatively, you can add this as your remote repository by navigating to your APSIM project location on your pc and using the command in a terminal:
 
-			git remote add https://github.com/ric394/ApsimX.git
+	```bash
+	git remote add https://github.com/ric394/ApsimX.git
+	```
 
 	- Note: replace "ric394" in the above command with your personal GitHub profile username.
 
 - You can then push to your remote (rather than origin). Click push and change ‘remote’ drop down to your newly created one. Mine looks like:
 
-	![push to remote](/images/push_to_remote.png)
+	![push to remote](https://github.com/APSIMInitiative/ApsimX/blob/master/ApsimNG/Resources/DocsImages/push_to_remote.png?raw=true)
 
 	- Alternatively, you can push to your remote repository by navigating to your local APSIM project directory and use the command below in a terminal:
 
-			git push ric394 master
+	```bash
+	git push ric394 master
+	```
 
-		- replace "ric394" with your remote repository name.
-		- replace "master" with the branch name you'd like to push the changes to.
+	- replace "ric394" with your remote repository name.
+	- replace "master" with the branch name you'd like to push the changes to.
 
 
 
 - After pushing you need to create a pull request. Right click on your ‘master’ branch and choose create pull request:
 
-	![pull request](/images/pull_request.png)
+	![pull request](https://github.com/APSIMInitiative/ApsimX/blob/master/ApsimNG/Resources/DocsImages/pull_request.png?raw=true)
 
 - This will open a browser window where you need to enter a comment in the top comment box.
 
-	![Create pull request](/images/create_pull_request.png)
+	![Create pull request](https://github.com/APSIMInitiative/ApsimX/blob/master/ApsimNG/Resources/DocsImages/create_pull_request.png?raw=true)
 
 	- You can reference issue numbers here. Each pull request must contain a issue number.
 		- For example, if this pull request resolves an issue, type:
