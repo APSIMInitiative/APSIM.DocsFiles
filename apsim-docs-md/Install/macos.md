@@ -20,7 +20,7 @@ Apsim requires the **x64 verion of the .NET 8.0 SDK library**.
 
 Do **NOT** install the Arm64 version. The x64 version will work on an Arm M1/M2/M3 system, and is the library that Apsim is looking to run with.
 
-![.NET Version](/images/netversion.png)
+![.NET Version](https://github.com/APSIMInitiative/ApsimX/blob/master/ApsimNG/Resources/DocsImages/netversion.png?raw=true)
 
 Download the SDK MacOS x64 library and run the installer it gives you. Please only use the installer.
 Afterwards, open up a terminal and run:

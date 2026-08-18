@@ -17,6 +17,6 @@ draft: false
 
 ## Install using docker
 
-* To do this see the instructions [here](/docs/usage/commandline/command-line-linux")</a>
+* To do this see the instructions [here](/usage/commandline/command-line-linux")</a>
 
 Last updated: 20/06/2024 - Please alert us at our [github page](https://github.com/APSIMInitiative/ApsimX/issues) if these instructions become outdated or incorrect

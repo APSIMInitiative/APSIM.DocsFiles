@@ -4,4 +4,4 @@ draft: false
 weight: 10
 ---
 
-* [APSIM file versions & APSIM Software versions](/technicalinformation/versioning)
+This section provided technical information about APSIM
