@@ -6,7 +6,7 @@ weight: 220
 
 In this tutorial we will explain how Plant Modelling Framework (PMF) functions work. We will use the wheat leaf photosynthesis model as an example.
 
-Prerequisite: It is suggested you read [how to build a model](/development/tutorial/buildmodeltutorial) first.
+Prerequisite: It is suggested you read [how to build a model](/docs/development/tutorial/buildmodeltutorial) first.
 
 # 1. The PMF leaf organ
 
