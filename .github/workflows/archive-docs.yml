@@ -1,0 +1,43 @@
+name: Archive Docs Folders
+
+# Creates a dated tar.gz archive of each apsim-docs folder and publishes them
+# as assets on a new GitHub release, e.g. apsim-docs-md-2026-08-21.tar.gz
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - "apsim-docs-md/**"
+      - "apsim-docs-html/**"
+
+permissions:
+  contents: write
+
+jobs:
+  archive:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set archive date
+        id: date
+        run: echo "date=$(date +'%Y-%m-%d')" >> "$GITHUB_OUTPUT"
+
+      - name: Create tar archives
+        run: |
+          tar -czf "apsim-docs-md-${{ steps.date.outputs.date }}.tar.gz" apsim-docs-md
+          tar -czf "apsim-docs-html-${{ steps.date.outputs.date }}.tar.gz" apsim-docs-html
+
+      - name: Create release with archives
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: docs-${{ steps.date.outputs.date }}
+          name: Docs archive ${{ steps.date.outputs.date }}
+          files: |
+            apsim-docs-md-${{ steps.date.outputs.date }}.tar.gz
+            apsim-docs-html-${{ steps.date.outputs.date }}.tar.gz
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
