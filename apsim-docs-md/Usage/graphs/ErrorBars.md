@@ -9,11 +9,11 @@ Error bars will automatically be added to a graph if an error column exists corr
 
 #### Report configuration
 
-![Report](https://github.com/APSIMInitiative/ApsimX/blob/master/Docs/static/images/Usage.Graphs.ErrorBars.Graph.png?raw=true)
+![Report](https://github.com/APSIMInitiative/ApsimX/blob/master/ApsimNG/Resources/DocsImages/Usage.Graphs.ErrorBars.SimpleExample.Report.png?raw=true)
 
 ### Resultant graph
 
-![Simple Example - graph](https://github.com/APSIMInitiative/ApsimX/blob/master/Docs/static/images/Usage.Graphs.ErrorBars.SimpleExample.Graph.png?raw=true)
+![Simple Example - graph](https://github.com/APSIMInitiative/ApsimX/blob/master/ApsimNG/Resources/DocsImages/Usage.Graphs.ErrorBars.SimpleExample.Graph.png?raw=true)
 
 ## PredictedObserved Example
 
@@ -23,12 +23,12 @@ In this example, there is an error column in the observed data which will appear
 
 (Note that missing error values are fine.)
 
-![Observed Data](/images/Usage.Graphs.ErrorBars.ObservedData.png)
+![Observed Data](https://github.com/APSIMInitiative/ApsimX/blob/master/ApsimNG/Resources/DocsImages/Usage.Graphs.ErrorBars.ObservedData.png?raw=true)
 
 #### Report configuration
 
-![Report](/images/Usage.Graphs.ErrorBars.Report.png)
+![Report](https://github.com/APSIMInitiative/ApsimX/blob/master/ApsimNG/Resources/DocsImages/Usage.Graphs.ErrorBars.Report.png?raw=true)
 
 #### Resultant graph
 
-![Resultant Graph](/images/Usage.Graphs.ErrorBars.Graph.png)
+![Resultant Graph](https://github.com/APSIMInitiative/ApsimX/blob/master/ApsimNG/Resources/DocsImages/Usage.Graphs.ErrorBars.Graph.png?raw=true)
