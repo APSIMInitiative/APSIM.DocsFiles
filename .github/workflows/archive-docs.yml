@@ -24,7 +24,7 @@ jobs:
 
       - name: Set archive date
         id: date
-        run: echo "date=$(date +'%Y-%m-%d')" >> "$GITHUB_OUTPUT"
+        run: echo "date=$(date +'%Y-%m-%d-%H-%M-%S')" >> "$GITHUB_OUTPUT"
 
       - name: Create tar archives
         run: |
