@@ -10,7 +10,7 @@ simulation (sometimes called the base simulation) defines the default behaviour
 of the experiment. The factors node should contain multiple factor children,
 where each factor defines one or more treatments (levels) of the experiment.
 
-![A basic experiment configuration](/images/Usage.Factorial.BasicExperiment.png)
+![A basic experiment configuration](https://github.com/APSIMInitiative/ApsimX/blob/master/ApsimNG/Resources/DocsImages/Usage.Factorial.BasicExperiment.png?raw=true)
 
 When run, the experiment will generate one simulation for each factor level. The
 factors and factor levels are defined by the factor configurations under the
@@ -40,7 +40,7 @@ factor specification can be one of:
 - A path to a model that will be replaced with one or more children of this
   factor that have a matching type e.g.
 
-  ![A model replacement example](/images/Usage.Factorial.ModelReplacement.png)
+  ![A model replacement example](https://github.com/APSIMInitiative/ApsimX/blob/master/ApsimNG/Resources/DocsImages/Usage.Factorial.ModelReplacement.png?raw=true)
 
 - Can be empty if the factor has one or more composite factor children. In this 
   case, one treatment will be generated for each composite factor child.
@@ -53,11 +53,11 @@ text input. Each line should contain a single factor specification string, which
 can be any valid factor specification (described above). If changing a property,
 only one value is allowed per line (ie no comma separated values).
 
-  ![An example of composite factors](/images/Usage.Factorial.CompositeFactor.png)
+  ![An example of composite factors](https://github.com/APSIMInitiative/ApsimX/blob/master/ApsimNG/Resources/DocsImages/Usage.Factorial.CompositeFactor.png?raw=true)
 
 ## Permutations
 
 The permutations node should have multiple factor children, and it will generate
 one factor level (treatment) for each permutation of its child factors' values.
 
-![Permutation Example](/images/Usage.Factorial.Permutation.png)
+![Permutation Example](https://github.com/APSIMInitiative/ApsimX/blob/master/ApsimNG/Resources/DocsImages/Usage.Factorial.Permutation.png?raw=true)

@@ -49,4 +49,4 @@ namespace Models
 
 Then the MyColumn variable can be reported (e.g. as `Manager.Script.MyColumn`).
 
-![Screenshot of report data](/images/CustomMetDataReport.png)
+![Screenshot of report data](https://github.com/APSIMInitiative/ApsimX/blob/master/ApsimNG/Resources/DocsImages/CustomMetDataReport.png?raw=true)

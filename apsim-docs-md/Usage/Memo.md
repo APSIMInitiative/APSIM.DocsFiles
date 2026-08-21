@@ -11,9 +11,9 @@ largely taken from the [website of John Gruber] [Gruber], the developer of Markd
 
 [Gruber]: https://daringfireball.net/projects/markdown/syntax
 
-![Usage](/images/Usage.Memo1.png)  
+![Usage](https://github.com/APSIMInitiative/ApsimX/blob/master/ApsimNG/Resources/DocsImages/Usage.Memo1.png?raw=true)  
 
-![Usage](/images/Usage.Memo2.png) 
+![Usage](https://github.com/APSIMInitiative/ApsimX/blob/master/ApsimNG/Resources/DocsImages/Usage.Memo2.png?raw=true) 
 
 -------
 

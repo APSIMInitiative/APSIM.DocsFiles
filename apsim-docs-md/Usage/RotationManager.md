@@ -20,8 +20,8 @@ The actions to be performed are specified in the "Actions" textbox which appears
 
 In the following example, the rotation manager starts in the "initial" state and asks the MaizeManager (a manager script) each day if it is ready to sow a crop. If the manager is ready to sow, then the rotation manager will tell MaizeManager to sow a crop. Note that `CanSow` is a property in the manager script, and as such there are not parentheses required. However `SowCrop()` is a method (function) in the manager script, so parentheses are required for the invocation. Arguments can be passed if required by the method, but they must be primitive types (string, int, double, bool, etc).
 
-![State transition](/images/RotationManager.Transition.png)
-![State transition script](/images/RotationManager.Transition.Script.png)
+![State transition](https://github.com/APSIMInitiative/ApsimX/blob/master/ApsimNG/Resources/DocsImages/RotationManager.Transition.png?raw=true)
+![State transition script](https://github.com/APSIMInitiative/ApsimX/blob/master/ApsimNG/Resources/DocsImages/RotationManager.Transition.Script.png?raw=true)
 
 States/nodes can be added by right-clicking an empty area of the rotation manager and clicking "Add Node". Arcs can be added by selecting (clicking on) a node and then right clicking on another node and selecting "Add node from x to y".
 

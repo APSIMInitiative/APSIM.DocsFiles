@@ -7,4 +7,4 @@ When trying to find models that are in scope (either by links or the ‘get’ m
 
 In the image below, the models highlighted in yellow are in scope of *Potato*
 
-![Scope](/images/Development.Scope.png)
+![Scope](https://github.com/APSIMInitiative/ApsimX/blob/master/ApsimNG/Resources/DocsImages/Development.Scope.png?raw=true)

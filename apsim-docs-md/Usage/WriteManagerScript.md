@@ -7,13 +7,13 @@ Writing manager scripts is for advanced users. **It is always much easier modify
 
 For this tutorial, we will be using the 'Fertilise on fixed dates (advanced version)' manager script in the management toolbox. There are a number of input parameters for this manager script:
 
-![Properties](/images/Usage.ManagerScript.Parameters.png)  
+![Properties](https://github.com/APSIMInitiative/ApsimX/blob/master/ApsimNG/Resources/DocsImages/Usage.ManagerScript.Parameters.png?raw=true)  
 
 The parameters for this script show a range of types (checkboxes, drop down, string array etc)
 
 **Structure of a manager script.**
 
-![Structure](/images/Usage.ManagerScript.ScriptStructure.png)  
+![Structure](https://github.com/APSIMInitiative/ApsimX/blob/master/ApsimNG/Resources/DocsImages/Usage.ManagerScript.ScriptStructure.png?raw=true)  
 
 **namespaces**
 
@@ -32,7 +32,7 @@ A class is collection of fields, properties, event handlers and methods. Classes
 
 A link defines a dependancy on another model in APSIM. If your manager script needs the value of a variable from another model then you will need to add a link to that model. An example is getting the current simulation date from the clock model. Another example would be getting the maximum temperature from the weather model. The format for links is:
 
-![Link](/images/Usage.ManagerScript.ScriptStructure.Link.png)
+![Link](https://github.com/APSIMInitiative/ApsimX/blob/master/ApsimNG/Resources/DocsImages/Usage.ManagerScript.ScriptStructure.Link.png?raw=true)
 
 *Model type* is the class name of the model. *Variable name* is the name of the variable that clock will be known as in the manager script. For PMF models, the *Model type* will be *Plant* while the *Variable name* could be *wheat*. For AgPasture, the *Model type* will be *PastureSpecies* and the *Variable name* could be *AGPRyegrass*. If there is a model in the simulation tree, then a manager script can link to it. If you hover the mouse over the model in the simulation tree, the tool tip will show the *Model type*. The name of the model in the simulation tree will be the *Variable name*.
 
@@ -40,7 +40,7 @@ A link defines a dependancy on another model in APSIM. If your manager script ne
 
 Quite often a manager script will need to define fields (variables) that are private to the class i.e. cannot be accessed by another model in the simulation. The format for private fields is:
 
-![Link](/images/Usage.ManagerScript.ScriptStructure.Field.png)
+![Link](https://github.com/APSIMInitiative/ApsimX/blob/master/ApsimNG/Resources/DocsImages/Usage.ManagerScript.ScriptStructure.Field.png?raw=true)
 
 *Data type* is the type of variable e.g. 
 
@@ -55,14 +55,16 @@ These data types can also be arrays i.e. by appending *[]* to the end of the typ
 
 Properties are often used as placeholders for mapping of values from the user-input *parameters* tab and for publically available outputs that can be reported from a script.
 
-![Link](/images/Usage.ManagerScript.ScriptStructure.Property.png)
+![Link](https://github.com/APSIMInitiative/ApsimX/blob/master/ApsimNG/Resources/DocsImages/Usage.ManagerScript.ScriptStructure.Property.png?raw=true)
 
 * They are formatted the same as for field but with *{get; set;}* appended to them. The same data types are supported. 
 * If they are to be used for user-input parameters then they need to have a *[Description]* attribute, the text of which appears in the *Parameters* tab. 
 * They can optionally have a *[Separator]* attribute to define a visual separator on the *Parameters* tab.
-* If the *DataType* is an enum then a drop down list will be shown to the user. For example defining ```
+* If the *DataType* is an enum then a drop down list will be shown to the user. For example defining 
+```
 enum DropDownMembers { A, B, C, D }
-``` and then using this DataType in the property will cause the user interface to show a drop down list of A, B, C, D.
+``` 
+and then using this DataType in the property will cause the user interface to show a drop down list of A, B, C, D.
 * They can optionally have a *[Display]* attribute that instructs the user interface to show format the user-input cell in different ways. Examples of using this attribute:
     * [Display(Type=DisplayType.TableName)]: The user interface will show a drop down list of tables in the datastore.
 	* [Display(Type=DisplayType.FieldName)]: Ther user interface will show a drop down list of fields (columns) in the table specified by a table property in the same script.
@@ -77,7 +79,7 @@ enum DropDownMembers { A, B, C, D }
 
 Methods (functions) are where lines of code are put to perform calculations.
 
-![Link](/images/Usage.ManagerScript.ScriptStructure.Method.png)
+![Link](https://github.com/APSIMInitiative/ApsimX/blob/master/ApsimNG/Resources/DocsImages/Usage.ManagerScript.ScriptStructure.Method.png?raw=true)
 
 Methods can return the value of a single variable. The data type of the return variable is specified by *Return type* in the image above. It can be void, meaning the method returns nothing, or the method can return a variable of one of the data types listed for fields above. Arguments of the method are varaibles that are passed into the method to be used by the method. They are comma separated ``` DataType VariableName ``` format similar to fields. Most methods in manager scripts are private i.e. are not callable from other models in APSIM. They can be declared public if necssary.
 

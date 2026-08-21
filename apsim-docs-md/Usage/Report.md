@@ -70,20 +70,6 @@ This is a good idea for variables that are long and complex.
 
 If you try to run a report with a variable or event that is not valid you will see an error message appear in the message box at the bottom of the ApsimX window.
 
-### Adding an event or variable to the common report variable/event list.
-
-Anyone can submit a new common report variable or event to the lists for anyone to use.
-Mulitple events and variables can be added at one time.
-
-There are two ways to do this:
-
-1. Use the 'submit new event/variable' button in the common report events window. 
-    - This will take you to the ApsimX github page where you can submit a new 'issue' where you can add the information required to add a new variable or event.
-2. Navigate directly to https://github.com/APSIMInitiative/ApsimX/issues/new?assignees=&labels=New+common+report+event%2Fvariable&projects=&template=new-common-report-event-variable.yml and add your details there.
-
-Once this is submitted the event or variable will be reviewed. If accepted it will be added to the list for anyone to use.
-
-
 ## Using report row filters
 
 To filter the row data in your report node, you can use row filters.
@@ -137,11 +123,11 @@ An example:
 Wheat
 ```
 
-![report variables](/images/report-vars.png)
+![report variables](https://github.com/APSIMInitiative/ApsimX/blob/master/ApsimNG/Resources/DocsImages/report-vars.png?raw=true)
 *Report variables in the simulation:*
 
 
-![column filter results](/images/report-column-filter-result.png)
+![column filter results](https://github.com/APSIMInitiative/ApsimX/blob/master/ApsimNG/Resources/DocsImages/report-column-filter-result.png?raw=true)
 *Results of using a common keyword*
 
 Note: Only one column filter can be used at one time.

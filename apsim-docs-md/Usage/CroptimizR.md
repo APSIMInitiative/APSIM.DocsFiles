@@ -69,10 +69,10 @@ The maximum number of iterations within a single repetition.
 ## Example Configurations
 
 *Predicted and observed data in separate tables*
-![example file](/images/Usage.CroptimizR.ExampleFile.png)
+![example file](https://github.com/APSIMInitiative/ApsimX/blob/master/ApsimNG/Resources/DocsImages/Usage.CroptimizR.ExampleFile.png?raw=true)
 
 *Predicted/Observed table*
-![example file](/images/Usage.CroptimizR.ExampleFile.POTable.png)
+![example file](https://github.com/APSIMInitiative/ApsimX/blob/master/ApsimNG/Resources/DocsImages/Usage.CroptimizR.ExampleFile.POTable.png?raw=true)
 
 ---
 ## Outputs
@@ -92,4 +92,4 @@ If the .apsimx file contains a top-level summary node (as in the examples above)
 As mentioned earlier, the detailed outputs of the optimisation are imported into the datastore, and can be viewed by clicking on the datastore and choosing CroptimizR from the simulation name dropdown. This data shows one row per repetition of the optimisation, and can be graphed inside APSIM.
 
 *Starting vs optimal value in each iteration*
-![Sample Graphs](/images/Usage.CroptimizR.Graphs.png)
+![Sample Graphs](https://github.com/APSIMInitiative/ApsimX/blob/master/ApsimNG/Resources/DocsImages/Usage.CroptimizR.Graphs.png?raw=true)
