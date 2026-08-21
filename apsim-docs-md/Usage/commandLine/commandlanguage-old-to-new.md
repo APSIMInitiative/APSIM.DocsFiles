@@ -4,7 +4,7 @@ draft: false
 weight: 30
 ---
 
-The APSIM command language has changed to make it more intuitive. [The new language is described here](/usage/commandline/commandlanguage). Most of the changes are to the ```add``` command. The other commands remain unchanged.
+The APSIM command language has changed to make it more intuitive. [The new language is described here](/docs/usage/commandline/commandlanguage). Most of the changes are to the ```add``` command. The other commands remain unchanged.
 
 Examples that show how to convert old syntax to the new syntax.
 

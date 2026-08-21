@@ -14,7 +14,7 @@ Reasons need to be given by the model author should any of the guidelines not be
 
 **Submission Guidelines**
 
-* Submissions will be via a [GitHub Pull Request](/docs/contribute/sourcetree/pushandpullrequest)
+* Submissions will be via a [GitHub Pull Request](docs/development/git-version-control/git-sourcetree#open-a-pull-request)
 
 * Where possible, submissions should be small. For example, rather than adding a new model validation dataset and changing the parameterisation of a model, separate these into 2 submissions. This will allow the impacts of the new dataset and the changed parameterisation to be independently assessed.
 
@@ -28,20 +28,20 @@ Reasons need to be given by the model author should any of the guidelines not be
 
 **Software Guidelines**
 
-* [Coding style](/development/software/codingstyle)
+* [Coding style](/docs/development/software/codingstyle)
 
-* [Model design](s/development/software/modeldesign)
+* [Model design](/docs/development/software/modeldesign)
 
-* [User interface design](/development/software/userinterfacedesign)
+* [User interface design](/docs/development/software/userinterfacedesign)
 
-* [PMF model design](/development/software/pmfdesign)
+* [PMF model design](/docs/development/software/pmfdesign)
 
-* [Software interfaces](/development/software/interfaces)
+* [Software interfaces](/docs/development/software/interfaces)
 
-* [Unit tests](/development/software/unittests)
+* [Unit tests](/docs/development/software/unittests)
 
 **Science guidelines**
 
-* [Testing](/usage/tests)
+* [Testing](/docs/usage/tests)
 
-* [Documentation](/usage/documentationtutorial)
+* [Documentation](/docs/usage/documentationtutorial)

@@ -11,7 +11,7 @@ This outlines the APSIM review process for all contributions to GitHub.
 * Describe the issue and functionality required with an emphasis on “Why” the change is required i.e. the use-case.
 * Raise the issue early (well before development) to allow input from others.
 * For a user interface defect, create a small video that demonstrates the problem.
-* Ensure code conforms to the [Issue guidelines](/contribute/issues)
+* Ensure code conforms to the [Issue guidelines](/docs/contribute/issues)
 
 ### Step 2 Issue is reviewed by software team
 

@@ -23,7 +23,7 @@ weight: 40
 
 ### Validation tests
 
-Model submissions will provide evidence that the model works. This is normally done via validation tests that show predicted with observed data, along with validation statistics. The validation tests need to be accompanied by [memo](/docs/usage/memo) text that describe the experiment and treatments. The validation .apsimx file is also converted to [HTML via auto documentation](/validation).
+Model submissions will provide evidence that the model works. This is normally done via validation tests that show predicted with observed data, along with validation statistics. The validation tests need to be accompanied by [memo](/docs/usage/memo) text that describe the experiment and treatments.
 
 ### Sensibility tests
 

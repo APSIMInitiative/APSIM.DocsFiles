@@ -245,21 +245,16 @@ Then delete the Heavy Clay soil.
 	- Next, click "NH4" node and change the "ppm" value to "kg/ha" like we did above with "NO3" node.
 	- Change Depth to "0-1300" and "initial value" to "3".
 	- Your nodes variables should look like below:
-<table>
-	<tr>
 
-		<td>
-		<p>NO3</p>
+		**NO3**
+
 		![NO3](https://raw.githubusercontent.com/APSIMInitiative/ApsimX/master/ApsimNG/Resources/DocsImages/ModuleOneImages/step34.png)
-		</td>
 
-		<td>
-		<p>NH4</p>
+		**NH4**
+		
 		![NH4](https://raw.githubusercontent.com/APSIMInitiative/ApsimX/master/ApsimNG/Resources/DocsImages/ModuleOneImages/step35.png)
-		</td>
+		
 
-	</tr>
-</table>
 
 ## Graph both Simulations
 1. Next, run APSIM.
