@@ -13,16 +13,16 @@ This language replaces an older version of the language. If you have command fil
 ## What commands can you perform?
 
 - __load__ - loads a .apsimx file into memory. Subsequent commands will then apply to the contents of the file.
-     ```load C:\TestSims\wheatTest.apsimx```
+    - ```load C:\TestSims\wheatTest.apsimx```
 - __save__ - saves the in-memory simulations to file.
-    ```save C:\TestSims\wheatTest.apsimx```
+    - ```save C:\TestSims\wheatTest.apsimx```
 - __run__ - run APSIM on the in-memory simulations.
-    ```run```
+    - ```run```
 - __add__ - add a new or existing model to another model.
-    ```add new Report to [Zone]```
-    ```add new Report to [Zone] name MyReport```
-    ```add [Report] to all [Zone]```
-    ```add [Soil1] from soils.apsimx to [Zone] name Soil```
+    - ```add new Report to [Zone]```
+    - ```add new Report to [Zone] name MyReport```
+    - ```add [Report] to all [Zone]```
+    - ```add [Soil1] from soils.apsimx to [Zone] name Soil```
 - __delete__ - delete a model
     - ```delete [Zone].Soil```
 - __delete all__ - delete all of a model type
@@ -36,15 +36,15 @@ This language replaces an older version of the language. If you have command fil
     - ```replace all [Report] with NewReport name ReportWithNewName```
     - ```replace all [Report] with NewReport from anotherfile.apsimx name ReportWithNewName```
 - __property set__ - Change the property of a model
-      ```[Weather].FileName=Dalby.met```
+    - ```[Weather].FileName=Dalby.met```
 - __property set__ - Change the property of a model using the value read from a file (contents of value.txt).
-      ```[Weather].FileName=<value.txt```
+    - ```[Weather].FileName=<value.txt```
 - __property add to array__ - Add a string to a model array property or update it if it already exists.
-      ```[Janz].Command += [Phenology].CAMP.EnvData.VrnTreatTemp = 5.5```
+    - ```[Janz].Command += [Phenology].CAMP.EnvData.VrnTreatTemp = 5.5```
 - __property delete from array__ - Remove a string from a model array property
-      ```[Janz].Command -= [Phenology].CAMP.EnvData.VrnTreatTemp```
+    - ```[Janz].Command -= [Phenology].CAMP.EnvData.VrnTreatTemp```
 - __comment lines__ - you can comment out command lines
-      ```# Add Soil1 from the soils database file```
+    - ```# Add Soil1 from the soils database file```
 
     _note 1: all file name references can either have an absolute path or no path making the file relative to the command file._
 
