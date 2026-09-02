@@ -25,6 +25,11 @@ This language replaces an older version of the language. If you have command fil
     ```add [Soil1] from soils.apsimx to [Zone] name Soil```
 - __delete__ - delete a model
     - ```delete [Zone].Soil```
+- __delete all__ - delete all of a model type
+
+    **Special note**: If you have a model of any type with a matching name to the one
+    inside the square brackets in your simulation, it will delete these first, leaving all models of that type in place.
+    - ```delete all [Report]```
 - __duplicate__ - duplicate a model.
     - ```duplicate [Zone].Report name NewReport```
 - __replace__ - replace a model with another model
