@@ -38,7 +38,7 @@ This language replaces an older version of the language. If you have command fil
 - __property set__ - Change the property of a model
     - ```[Weather].FileName=Dalby.met```
 - __property set__ - Change the property of a model using the value read from a file (contents of value.txt).
-    - ```[Weather].FileName=<value.txt```
+    - ```[Weather].FileName = from value.txt```
 - __property add to array__ - Add a string to a model array property or update it if it already exists.
     - ```[Janz].Command += [Phenology].CAMP.EnvData.VrnTreatTemp = 5.5```
 - __property delete from array__ - Remove a string from a model array property
