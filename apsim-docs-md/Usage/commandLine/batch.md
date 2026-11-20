@@ -19,7 +19,7 @@ the `--apply` switch can be used in conjunction with the `--batch` switch.
 
         ```
         load BaseCl.apsimx
-        [Soil]=SoilLibrary.apsimx;[$soil-name]
+        add [$soil-name] from SoilLibrary.apsimx to [Soil]
         [Weather].FileName=$weather-file-name
         [SimulationExp].Name=$sim-name
         run

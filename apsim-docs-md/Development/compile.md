@@ -4,7 +4,7 @@ draft: false
 weight: 20
 ---
 
-# Windows
+# Windows (Visual Studio)
 
 APSIM can be compiled using Microsoft Visual Studio 2019 or later. A single solution file exists in the root of the repository (ApsimX.sln). All executables will be built to the bin directory. The exact output path will depend upon whether the solution is built in debug or release mode. The default (debug) will output files to `bin\Debug\net8.0\`. APSIM currently can only be built against .NET 8.
 
@@ -17,8 +17,27 @@ Building APSIM requires that version 8.0 of the .NET SDK is installed. This can 
 
     Right-click on the solution in the solution explorer and click "Build solution"
 
-# LINUX
+# Windows (Visual Studio Code)
 
+APSIM can be compiled using Visual Studio Code. A single solution file exists in the root of the repository (ApsimX.sln). All executables will be built to the bin directory. The exact output path will depend upon whether the solution is built in debug or release mode. The default (debug) will output files to `bin\Debug\net8.0\`. APSIM currently can only be built against .NET 8.
+
+Building APSIM requires that version 8.0 of the .NET SDK is installed.
+
+## Install Dotnet 8 SDK
+
+This is required to build APSIM from source. It can be downloaded from [here](https://dotnet.microsoft.com/en-us/download/dotnet/8.0) making sure to select the correct installer for your system architecture.
+
+## Install Visual Studio Code
+
+To build and run APSIM visual studio will need to be installed. It can be downloaded from [here](https://code.visualstudio.com/download). To avoid having to use priviledges to update we recommend downloading the user installer.
+
+Once installed an extension is required called C# Dev Kit. This can be installed from the extension side bar within VS Code.
+
+## Running the solution
+
+From the Run and Debug primary side bar menu there is several options for running various projects with the APSIM repository. For most use cases the APSIM NG: Debug option can be used to launch the full version of APSIM.
+
+# LINUX
 
 Apsim may be built with the .NET SDK - currently version 8.0 is required. When building the solution, assemblies for all projects will be compiled to the bin/ directory. The exact location of a given file will depend upon how it is built - e.g. debug vs release configuration.
 
